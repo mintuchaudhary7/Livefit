@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+
+/* Logo */
+
+.navbar {
+    height: 65px;
+    background-color: #131416;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.nav-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.logo {
+    background-image: url(logo.png);
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px; 
+}
+
+.border {
+    border: 1.5px solid transparent;
+    
+    
+}
+
+.border a:hover {
+    color: red;
+    transition: 0.8s;
+}
+
+/* hero-section */
+
+.hero-section{
+    background-image: url(back.jpg);
+    background-size: cover;
+    height: 612px;
+}
+
+.heading{
+    color: white;
+    font-size: 30px;
+    padding-top: 150px;
+    padding-left: 50px;
+}
+
+.para{
+    color: aliceblue;
+    font-size: 19px;
+    margin-top: 13px;
+    padding-left: 55px;
+    padding-right: 700px;
+}
+
+.button1{
+    background-color: #0890ce;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-left: 55px;
+    margin-top: 13px;
+}
+
+.button1:hover{
+    border: 2px solid orange;
+}
+
+.button1 a{
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+
+
+.icon{
+    display: flex;
+    color: white;
+    padding-left: 55px;
+    padding-top: 100px;
+}
+
+.icon div{
+    padding-right: 30px;
+}
+
+.icon a{
+    color: white;
+}
+
+/* section 2 */
+
+.section2{ 
+    background-color: #18191a;
+
+}
+
+.section2 h2{
+    text-align: center;
+    color: rgb(223, 217, 217);
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.para2{
+    text-align: center;
+    color: rgb(224, 217, 217);
+    font-size: 18px;
+    margin-top: 15px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.plan{
+    background-color: #18191a;
+    display: flex;
+    justify-content: center;
+}
+
+.plan div{
+    height: 300px;
+    width: 285px;
+    background-color: #86c2e8;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+
+.plan div:hover{
+    border: 2px solid orange;
+}
+
+.box h2{
+    margin-top: 10px;
+}
+
+.box p{
+    margin-top: 15px;
+}
+
+.plan div button{
+    background-color: #0890ce;
+    margin-top: 30px;
+    height: 40px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.plan div button:hover{
+    border: 2px solid orange;
+}
+
+.plan div button a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.box{
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    background-color: #242323;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}

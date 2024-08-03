@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Livefit</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/Photos/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="wraper">
+      <h3 class="bmihead">
+        <b>B</b>ody <b>M</b>ass <b>I</b>ndex <b>C</b>alculator
+      </h3>
+      <div class="sec1"></div>
+      <div class="wraper">
+        <form class="form" id="form" onsubmit="return validateForm()">
+          <div class="row-one">
+            <input
+              type="text"
+              class="text-input"
+              id="age"
+              autocomplete="off"
+              required
+            />
+            <p class="text">Age</p>
+            <label class="container">
+              <input type="radio" name="radio" id="f" />
+              <p class="text">Female</p>
+              <span class="checkmark"></span>
+            </label>
+            <label class="container">
+              <input type="radio" name="radio" id="m" />
+              <p class="text">Male</p>
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div class="row-two">
+            <input
+              type="text"
+              class="text-input"
+              id="height"
+              autocomplete="off"
+              required
+            />
+            <p class="text">Height (cm)</p>
+            <input
+              type="text"
+              class="text-input"
+              id="weight"
+              autocomplete="off"
+              required
+            />
+            <p class="text">Weight (kg)</p>
+          </div>
+          <button type="button" id="submit" class="text">Submit</button>
+        </form>
+      </div>
+      <div class="side" id="bmi1">
+        <img
+          src="/Photos/WhatsApp Video 2023-08-28 at 12.25.35 AM.mp4"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="parent">
+      <div class="somepara" id="somepara">
+        <p>Here is Diet plan and workout According to your <span>BMI:</span></p>
+        <br /><br />
+        <h1 class="diet-para">Diet</h1>
+      </div>
+      <div class="under" id="under-diet">
+        <table>
+          <tr>
+            <td>7:00 </td>
+            <td>Oats with Milk</td>
+          </tr>
+          <tr>
+            <td>9:30 AM</td>
+            <td>2 roti with 4 egg white and sabji</td>
+          </tr>
+          <tr>
+            <td>12:30 pm</td>
+            <td>1 Apple</td>
+          </tr>
+          <tr>
+            <td>2:30 PM</td>
+            <td>1 bowl of rice and 200gm of chicken and daal</td>
+          </tr>
+          <tr>
+            <td>4:00 PM</td>
+            <td>2 slice bread with peanut butter and 1 banana</td>
+          </tr>
+          <tr>
+            <td>Post workout</td>
+            <td>3 egg white with 2 slice of bread and peanut butter</td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td>2 roti with 150gm of chicken</td>
+          </tr>
+        </table>
+        <br />
+      </div>
+      <p class="work-text" id="work_text">Work-out <br></p>
+      <br />
+      <br>
+      <div class="under" id="under_work">
+        <table class="table_work">
+          <tr>
+            <td>Mon</td>
+            <td>Tuesday</td>
+            <td>Wednesday</td>
+            <td>Thrusday</td>
+            <td>Friday</td>
+            <td>Saturday</td>
+            <td>Sunday</td>
+          </tr>
+
+          <tr></tr>
+          <tr>
+            <td>Chest day</td>
+            <td>Backday</td>
+            <td>Bicep/tricep</td>
+            <td>Shoulder</td>
+            <td>Leg</td>
+            <td>R</td>
+            <td>R</td>
+          </tr>
+          <tr>
+            <td>Bench press 3*12</td>
+            <td>Lat pull downs 4*15</td>
+            <td>Rod curls 3*12</td>
+            <td>Military press 3*12</td>
+            <td>Barbell Squats 4*12</td>
+            <td>E</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>Incline Dumbbell press 3*15</td>
+            <td>T-bar 3*12</td>
+            <td>Alternate Dumbbell curls 3*12</td>
+            <td>Dumbbell overhead press 4*10</td>
+            <td>Leg press 4*12</td>
+            <td>S</td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>Incline Dumbbell fly 3*10</td>
+            <td>Reverse lat pull down 3*10</td>
+            <td>Preacher machine 3*12</td>
+            <td>Lateral raises 3*15</td>
+            <td>Leg extension 4*12</td>
+            <td>T</td>
+            <td>T</td>
+          </tr>
+          <tr>
+            <td>Chest press machine 4*15</td>
+            <td>side Dumbbell row 3*12</td>
+            <td>Skull crusher 3*12</td>
+            <td>Front raises 3*10</td>
+            <td>Leg curl 4*10</td>
+            <td>D</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>Cable cross 3*12</td>
+
+            <td>Barbell row 3*10</td>
+            <td>Overhead tricep extensions 3*12</td>
+            <td>Face pull 3*15</td>
+            <td>Dumbbell lunges 3*10</td>
+            <td>A</td>
+            <td>A</td>
+          </tr>
+
+          <tr>
+            <td>Dumble pullovers 3*10</td>
+            <td>Cable pulldown 3*10</td>
+            <td>Dumbbell kickback 3*12</td>
+            <td>Shrugs 4*12</td>
+            <td>Seated calf raises 4*12</td>
+            <td>Y</td>
+            <td>Y</td>
+          </tr>
+        </table>
+      </div>
+      <div class="under" id="normal-diet">
+        <table>
+          <tr>
+            <td>Morning</td>
+            <td>3 roti with 4 eeg white and sabji</td>
+          </tr>
+          <tr>
+            <td>12:30 AM</td>
+            <td>1 Apple</td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td>1 Bowl of rice with 150gm of chicken</td>
+          </tr>
+          <tr>
+            <td>Evening</td>
+            <td>Brown bread with peanut butter</td>
+          </tr>
+          <tr>
+            <td>Post work-out</td>
+            <td>3 eg white</td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td>2 roti with 1 bowl of daal and sabji</td>
+          </tr>
+          <tr>
+            <td>1 hour before sleep</td>
+            <td>1 glass of milk</td>
+          </tr>
+        </table>
+        <br />
+      </div>
+      <p class="work-text" id="work_text1">Work-out  <br></p>
+      <br />
+      <div class="under" id="normal_work">
+        <table class="table_work">
+          <tr>
+            <td>Monday</td>
+            <td>Tuesday</td>
+            <td>Wednesday</td>
+            <td>Thrusday</td>
+            <td>Friday</td>
+            <td>Saturday</td>
+            <td>Sunday</td>
+          </tr>
+
+          <tr></tr>
+          <tr>
+            <td>Chest day</td>
+            <td>Backday</td>
+            <td>Bicep/tricep</td>
+            <td>Shoulder</td>
+            <td>Leg</td>
+            <td>R</td>
+            <td>R</td>
+          </tr>
+          <tr>
+            <td>Bench press 3*10</td>
+            <td>Lat pull downs 3*15</td>
+            <td>Alternate Dumbbell curls 3*10</td>
+            <td>Dumbbell overhead press 4*10</td>
+            <td>Barbell Squats 3*10</td>
+            <td>E</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>Incline Dumbbell press 2*15</td>
+            <td>side Dumbbell row 3*12</td>
+            <td>Preacher machine 3*12</td>
+            <td>Lateral raises 3*15</td>
+            <td>Leg press 3*10</td>
+            <td>S</td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>Incline Dumbbell press 2*15</td>
+            <td>Barbell row 3*12</td>
+            <td>Cable hammer curls 4*10</td>
+            <td>Front raises 3*10</td>
+            <td>Leg curl 3*10</td>
+            <td>T</td>
+            <td>T</td>
+          </tr>
+          <tr>
+            <td>Chest press machine 3*12</td>
+            <td>Cable pulldown 3*10</td>
+            <td>Skull crusher 3*10</td>
+            <td>Face pull 3*15</td>
+            <td>Leg extension 3*12</td>
+            <td>D</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>Cable cross 3*10</td>
+
+            <td></td>
+            <td>Overhead Dumbbell extension 3*12</td>
+            <td>Shrugs 4*12</td>
+            <td>Seated calf raises 3*12</td>
+            <td>A</td>
+            <td>A</td>
+          </tr>
+
+          <tr>
+            <td>---</td>
+            <td>----</td>
+            <td>Cable pushdown 4*12</td>
+            <td>---</td>
+            <td>---</td>
+            <td>Y</td>
+            <td>Y</td>
+          </tr>
+        </table>
+      </div>
+      <div class="under" id="over-diet">
+        <table>
+          <tr>
+            <td>Morning</td>
+            <td>Mixed Sallad</td>
+          </tr>
+          <tr>
+            <td>After 2 hour of breakfast</td>
+            <td>2 roti with 3 egg white and sabji</td>
+          </tr>
+          <tr>
+            <td>12:30 pm</td>
+            <td>1 Apple</td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td>1/2 bowl of brown rice and 150gm of chicken</td>
+          </tr>
+          <tr>
+            <td>Evening</td>
+            <td>1 glass of pineapple juice</td>
+          </tr>
+          <tr>
+            <td>Post workout</td>
+            <td>3 egg white with green vegitable salad</td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td>2 roti with 100gm of chicken</td>
+          </tr>
+        </table>
+        <br />
+      </div>
+      <p class="work-text" id="work_text2">Work-out <br></p>
+      <br />
+      <div class="under" id="over_work">
+        <table class="table_work">
+          <tr>
+            <td>Monday</td>
+            <td>Tuesday</td>
+            <td>Wednesday</td>
+            <td>Thrusday</td>
+            <td>Friday</td>
+            <td>Saturday</td>
+            <td>Sunday</td>
+          </tr>
+
+          <tr></tr>
+          <tr>
+            <td>Chest day</td>
+            <td>Backday</td>
+            <td>Bicep/tricep</td>
+            <td>Shoulder</td>
+            <td>Leg</td>
+            <td>R</td>
+            <td>R</td>
+          </tr>
+          <tr>
+            <td>Bench press 3*10</td>
+            <td>Lat pull downs 3*15</td>
+            <td>Rod curls 3*12</td>
+            <td>Military press 3*12</td>
+            <td>Barbell Squats 4*12</td>
+            <td>E</td>
+            <td>E</td>
+          </tr>
+          <tr>
+            <td>Alternate Dumbbell curls 3*10</td>
+            <td>T-bar 3*12</td>
+            <td>Alternate Dumbbell curls 3*12</td>
+            <td>Dumbbell overhead press 4*10</td>
+            <td>Leg press 4*12</td>
+            <td>S</td>
+            <td>S</td>
+          </tr>
+          <tr>
+            <td>Dumbbell overhead press 4*10</td>
+            <td>Reverse lat pull down 3*10</td>
+            <td>Preacher machine 3*12</td>
+            <td>Lateral raises 3*15</td>
+            <td>Leg extension 4*12</td>
+            <td>T</td>
+            <td>T</td>
+          </tr>
+          <tr>
+            <td>Chest press machine 4*15</td>
+            <td>side Dumbbell row 3*12</td>
+            <td>Skull crusher 3*12</td>
+            <td>Front raises 3*10</td>
+            <td>Leg curl 4*10</td>
+            <td>D</td>
+            <td>D</td>
+          </tr>
+          <tr>
+            <td>Cable cross 3*12</td>
+
+            <td>Barbell row 3*10</td>
+            <td>Overhead tricep extensions 3*12</td>
+            <td>Face pull 3*15</td>
+            <td>Dumbbell lunges 3*10</td>
+            <td>A</td>
+            <td>A</td>
+          </tr>
+
+          <tr>
+            <td>Dumble pullovers 3*10</td>
+            <td>Cable pulldown 3*10</td>
+            <td>Dumbbell kickback 3*12</td>
+            <td>Shrugs 4*12</td>
+            <td>Seated calf raises 4*12</td>
+            <td>Y</td>
+            <td>Y</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- </div> -->
+<br>
+<br>
+    <div class="obeas"></div>
+    <div class="btncls" id="knowmore">
+      <button class="button1" id="btnm">
+        <span> <a href="/getstarted.html">Know more</a> </span>
+      </button>
+    </div>
+    
+
+    <script src="/bmi.js"></script>
+  </body>
+</html>
